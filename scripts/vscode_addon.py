@@ -73,7 +73,7 @@ def vscodeGen_launch(projSett, compSett):
             "runToMain": True,
             "executable": outputFile,
             "configFiles": [
-                config.FIRMWARE_V3_PATH + "/scripts/openocd/lpc4337_new.cfg"
+                config.get_openocd_cfg()
             ],
             "gdbPath": GDB_PATH
         }
